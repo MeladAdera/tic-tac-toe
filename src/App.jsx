@@ -2,8 +2,8 @@ import './App.css';
 import { useState } from 'react';
 import Sqr from './components/Sqr';
 function App() {
-  const [sqrs,setSqrs]= useState(["","","","","","","","",""])
-
+  const [sqrs,_setSqrs]= useState(new Array(9).fill('')) ;
+  const [go,_setGo]= useState('x');
 
   return (
 <div className='container'>
@@ -11,7 +11,7 @@ function App() {
 
 
  {sqrs.map((sq,index) =>(
- <Sqr key={index} />
+ <Sqr id={index} go={go} setGo={_setGo} key={index} />
  ))}
    </div>
 </div>

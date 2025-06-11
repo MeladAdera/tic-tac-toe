@@ -1,10 +1,13 @@
-import React from 'react';
 
 
-const Sqr = () => {
+function Sqr({ id }){
+  const handleClick = () => {
+      console.log(id); // تأكد أن id معرف في مكان ما
+  };
+
   return (
-    <div className='square'></div>
-  )
+      <div className="square ${go}" onClick={handleClick}></div>
+  );
 }
 
-export default Sqr
+export default Sqr;
