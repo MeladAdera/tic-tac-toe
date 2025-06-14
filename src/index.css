@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  flex-direction:column;q
   justify-content: center;
   align-items: center; 
   height: 50vh; 
@@ -27,4 +28,10 @@
 widht:100px;
 hight:100px;
 border: solid 2px black;
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.x,.o{
+font-size: 80px;
 }

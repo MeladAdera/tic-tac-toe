@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 function Sqr({ index, sqrs, setSqrs, go, setGo }) {
   const handleClick = () => {

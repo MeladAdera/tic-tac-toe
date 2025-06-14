@@ -20,6 +20,7 @@ function App() {
           />
         ))}
       </div>
+      <div>{`its now ${go} turn!`} </div>
     </div>
   );
 }
