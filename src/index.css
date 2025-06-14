@@ -35,3 +35,6 @@ display: flex;
 .x,.o{
 font-size: 80px;
 }
+.message{
+font-size: 30px;
+}

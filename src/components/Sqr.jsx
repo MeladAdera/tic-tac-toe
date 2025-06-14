@@ -1,7 +1,6 @@
-
-
-function Sqr({ index, sqrs, setSqrs, go, setGo }) {
+function Sqr({ index, sqrs, setSqrs, go, setGo, winningMessage }) {
   const handleClick = () => {
+    if (winningMessage) return; // عدم السماح باللعب بعد الفوز
     if (sqrs[index]) return; // عدم السماح باللعب في خانة مأخوذة
 
     handleChange(go);
@@ -15,10 +14,13 @@ function Sqr({ index, sqrs, setSqrs, go, setGo }) {
   };
 
   return (
-    <div className={`square ${go}`} onClick={handleClick}>
+    <div
+      className={`square ${go}`} // إصلاح تركيب الكلاس
+      onClick={handleClick}
+    >
       {sqrs[index]}
     </div>
   );
 }
 
-export default Sqr
+export default Sqr;
